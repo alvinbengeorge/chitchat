@@ -43,7 +43,7 @@ def get_response(bot_log, model="gemma3:1b"):
 start_time = time.time()
 rounds = 0
 
-while time.time() - start_time < 1000:  # Or replace with: while rounds < 10
+while time.time() - start_time < 200:  # Or replace with: while rounds < 10
     rounds += 1
     elapsed = int(time.time() - start_time)
     print(f"\n--- Round {rounds} (at {elapsed}s) ---")
